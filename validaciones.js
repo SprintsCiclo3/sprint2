@@ -1,4 +1,4 @@
-function validar_nombre_usuario(string){
+function dato_nombre_usuario(string){
 
 }
 
