@@ -1,21 +1,19 @@
-console.log("aaaaaaaaaaaaaaaaaaaaaa");
-
 function validar_nombre_usuario(string){
 
 }
 
 function validar_edad_usuario(edad){
     if (Number.isInteger(edad) && edad>=13 && edad<110){
-        return "verdadero";
+        return true;
     }else{
-        return "falso";
+        return false;
     }
 }
 
 
 // =========== Validar Contraseña ===========
 
-function validar_contraseña(string){
+function validar_contrasena(string){
     // var contraseña = document.getElementById("dato_contrasena").value;
 
     var caracteres = /^[a-z0-9]+$/i;
