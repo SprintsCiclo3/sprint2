@@ -16,15 +16,16 @@ function validar_edad_usuario(edad){
 // =========== Validar Contraseña ===========
 
 function validar_contraseña(string){
-    var contraseña = document.getElementById("dato_contrasena").value;
+    // var contraseña = document.getElementById("dato_contrasena").value;
+
     var caracteres = /^[a-z0-9]+$/i;
-    var validar = caracteres.test(contraseña);
+    var validar = caracteres.test(string);
 
     if (!validar){
         alert("solo se permiten caracteres alfanumericos");
         return validar;
     }
-    else if (contraseña.length > 6 ){
+    else if (string.length > 6 ){
         alert("solo se permiten maximo 6 caracteres");
         return !validar;
     }
