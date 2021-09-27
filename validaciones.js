@@ -35,7 +35,6 @@ function validar_edad_usuario(edad){
     }
 }
 
-
 // =========== Validar Contraseña ===========
 
 function validar_contrasena(string){
