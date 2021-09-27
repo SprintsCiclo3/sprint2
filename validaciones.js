@@ -28,12 +28,26 @@ function validar_nombre_usuario(string){
 }
 
 function validar_edad_usuario(edad){
-    if (Number.isInteger(edad) && edad>=13 && edad<110){
-        return true;
-    }else{
+
+    if (Number.isInteger(edad)){
+        alert("debe ser un numero");
         return false;
     }
+
+    if (edad<0){
+        alert("debe ser un numero positivo");
+        return false;
+    }
+
+    if (edad < 13 || edad >= 110){
+        alert("debe ser mayor o igual a 13 y menor de 110");
+        return false;
+    }
+        alert("ingreso edad correcto");
+        return true;
+    
 }
+
 
 // =========== Validar Contraseña ===========
 
@@ -45,15 +59,21 @@ function validar_contrasena(string){
 
     if (!validar){
         alert("solo se permiten caracteres alfanumericos");
-        return validar;
+        return false;
     }
-    else if (string.length > 6 ){
-        alert("solo se permiten maximo 6 caracteres");
-        return !validar;
+    
+    if (string.length < 6 ){
+        alert("minimo 6 caracteres");
+        return false;
     }
-    else{
+    
         alert("contraseña correcta");
         return validar;
-    }
+
  
 }
+
+
+module.exports.validar_nombre_usuario = validar_nombre_usuario;
+module.exports.validar_contrasena = validar_contrasena;
+module.exports.validar_edad_usuario = validar_edad_usuario;
