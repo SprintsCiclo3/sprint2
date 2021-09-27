@@ -48,8 +48,8 @@ function validar_contrasena(string){
         alert("solo se permiten caracteres alfanumericos");
         return validar;
     }
-    else if (string.length > 6 ){
-        alert("solo se permiten maximo 6 caracteres");
+    else if (string.length < 6 ){
+        alert("solo se permiten mínimo 6 caracteres");
         return !validar;
     }
     else{
