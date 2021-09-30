@@ -14,7 +14,7 @@
     background-color: rgb(137, 156, 72);
     width:70%;
     margin: 10px;
-    padding: 5px;
+    padding: 50px;
     box-shadow: 9px 9px 15px;
     
 }
@@ -65,8 +65,8 @@ p{
 #titulo{
     grid-column: 2/3;
     grid-row: 1/2;
-    margin-top: 80px;
     text-align: center;
+    padding-top: 40px;
     color: #3537b1;
 }
 #form_nuevo_usuario{
