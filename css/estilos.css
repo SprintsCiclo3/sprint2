@@ -80,6 +80,7 @@ p{
     height: 300px;
     width: 500px;
     margin: auto;
+    border-radius: 20px;
 }
 
 #containerForm{
